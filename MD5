@@ -1,0 +1,17 @@
+6bff087111b32b0cd3056af317e384d3 *DESCRIPTION
+e16a13f7f8b5397b27ed4d8887f1af8e *LICENSE
+c904a226fbc9ac303844455dcd27a7b9 *NAMESPACE
+2bebeec9587b93a89bc093d1c01a4468 *R/generate_palette.R
+9b12ac3c322814f8d840760c2fb46f1b *R/helper_functions.R
+e3227bffbcb936637eefecd44d42201a *R/rgba_to_hex.R
+898a7d96aef69692a06ee90087b4b234 *R/view_palette.R
+466bd22089d639bcf08571b20680b9b7 *README.md
+63e0f720d5cc9822aac62c19c1a2e9c3 *inst/figures/logo-social.PNG
+310f16cee0cce829d3ce0c8741f8ad40 *inst/figures/logo.png
+bc53f6e950e8e95ab3d743ffe3f9b2bf *inst/logo.R
+e75e6d6c40bc7c00c5919cc57f4bf752 *man/check_colour_return_rgb.Rd
+72c36a8ff27a32f7c069b7ade28c1fcf *man/generate_palette.Rd
+6659516a516e6bb53c348b0faedc36b2 *man/rgb_to_hex.Rd
+5c80e3f95bdfdffc90cbf557dbc1861b *man/rgba_to_hex.Rd
+0194cb7039b5be0b6c5e894e31be78f9 *man/rgba_to_rgb.Rd
+9a443edb39a402081bb69379df0f483a *man/view_palette.Rd

@@ -1,0 +1,25 @@
+Package: monochromeR
+Title: Easily Create, View and Use Monochrome Colour Palettes
+Version: 0.1.0
+Authors@R: 
+    person(given = "Cara",
+           family = "Thompson",
+           role = c("aut", "cre"),
+           email = "cara.r.thompson@gmail.com",
+           comment = c(ORCID = "0000-0002-6472-5073"))
+Description: Generate a monochrome palette from a starting colour 
+    for a specified number of colours. The package can also be used to display 
+    colour palettes in the plot window, with or without hex colour code labels.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 7.1.0
+URL: https://github.com/cararthompson/monochromeR
+BugReports: https://github.com/cararthompson/monochromeR/issues
+Maintainer: Cara Thompson <cara.r.thompson@gmail.com>
+Imports: scales
+NeedsCompilation: no
+Packaged: 2021-12-17 20:35:36 UTC; Cara
+Author: Cara Thompson [aut, cre] (<https://orcid.org/0000-0002-6472-5073>)
+Repository: CRAN
+Date/Publication: 2021-12-20 09:20:08 UTC
