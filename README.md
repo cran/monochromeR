@@ -15,7 +15,10 @@ or without hex colour code labels.
 
 ## How can I use it?
 
-To install it, use
+This package is available on [CRAN](https://cran.r-project.org/), so can
+be installed using `install.packages("monochromeR")`.
+
+Alternatively, to install it from here, use
 `remotes::github_install("cararthompson/monochromeR")`. (To do this, you
 need to have installed the `remotes` package. To do that, use
 `install.packages("remotes")`.)
@@ -31,7 +34,7 @@ recognised colour names rather than hex codes or rgb values.
 library(monochromeR)
 
 generate_palette("purple", modification = "go_lighter", 
-                 n_colours = 5, view_palette = T)
+                 n_colours = 5, view_palette = TRUE)
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
@@ -43,7 +46,7 @@ colour/color.
 
 ``` r
 generate_palette("purple", modification = "go_darker", 
-                 n_colors = 5, view_palette = T, view_labels = F)
+                 n_colors = 5, view_palette = TRUE, view_labels = FALSE)
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
@@ -56,7 +59,7 @@ can also be assigned to an object for later use.
 
 ``` r
 purple_palette <- generate_palette("purple", modification = "go_both_ways", 
-                                   n_colours = 20, view_palette = T, view_labels = F)
+                                   n_colours = 20, view_palette = TRUE, view_labels = FALSE)
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
@@ -74,7 +77,7 @@ used to blend two colours together:
 
 ``` r
 generate_palette("purple", blend_colour = "green", 
-                 n_colours = 10, view_palette = T, view_labels = F)
+                 n_colours = 10, view_palette = TRUE, view_labels = FALSE)
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
@@ -101,7 +104,7 @@ rgba_to_hex(c(15, 75, 99, 0.8))
 #### View any palette, with or without labels
 
 ``` r
-view_palette(c("red", "yellow", "purple", "green"), view_labels = F)
+view_palette(c("red", "yellow", "purple", "green"), view_labels = FALSE)
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
@@ -112,6 +115,26 @@ view_palette(c(wesanderson::wes_palettes$Moonrise1,
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
+
+## Easily pass the output to functions which check accessibility
+
+Version 0.1.1 onwards exports a ggplot object, which can be passed to
+functions such as colorblindr::cvd_grid() to check how the palette is
+perceived by people with different visual perception. With
+`view_labels = TRUE`, the labels are displayed in black and white on top
+of the colour, to allow users to easily see how readable the text is.
+
+``` r
+view_palette(c("red", "yellow", "purple", "green"), view_labels = TRUE)
+```
+
+![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+
+``` r
+colorblindr::cvd_grid()
+```
+
+![](README_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->
 
 ## Worked examples: using `monochromeR` within datavisualisations
 
@@ -141,7 +164,7 @@ penguin_plot <- palmerpenguins::penguins %>%
 penguin_plot
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
 ``` r
 penguin_plot <- penguin_plot +
@@ -152,7 +175,7 @@ penguin_plot <- penguin_plot +
 penguin_plot
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-8-2.png)<!-- -->
 
 ### Creating a unified aesthetic across all aspects of the dataviz
 
@@ -168,7 +191,7 @@ penguin_palette <- generate_palette(c(15, 75, 99),
                                     view_labels = F)
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 
 ``` r
 penguin_plot +
@@ -184,7 +207,7 @@ penguin_plot +
           plot.subtitle = element_text(colour = penguin_palette[2], hjust = 0))
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-8-2.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-9-2.png)<!-- -->
 
 ## Extra resources
 

@@ -1,11 +1,11 @@
-6bff087111b32b0cd3056af317e384d3 *DESCRIPTION
+ee167608b668fc3ca4b1019ecb0991ae *DESCRIPTION
 e16a13f7f8b5397b27ed4d8887f1af8e *LICENSE
 c904a226fbc9ac303844455dcd27a7b9 *NAMESPACE
-2bebeec9587b93a89bc093d1c01a4468 *R/generate_palette.R
+3afc0cb4b6790be15cc5f06896c00c86 *R/generate_palette.R
 9b12ac3c322814f8d840760c2fb46f1b *R/helper_functions.R
 e3227bffbcb936637eefecd44d42201a *R/rgba_to_hex.R
-898a7d96aef69692a06ee90087b4b234 *R/view_palette.R
-466bd22089d639bcf08571b20680b9b7 *README.md
+9921a0f3e0eeebb5b2aad09082bb6cf9 *R/view_palette.R
+36a0be38ab2aeb834c1ef066dda0e0f0 *README.md
 63e0f720d5cc9822aac62c19c1a2e9c3 *inst/figures/logo-social.PNG
 310f16cee0cce829d3ce0c8741f8ad40 *inst/figures/logo.png
 bc53f6e950e8e95ab3d743ffe3f9b2bf *inst/logo.R
