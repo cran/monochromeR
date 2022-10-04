@@ -1,5 +1,11 @@
-monochromeR: an easy way to create monochrome colour palettes
+monochromeR: An easy way to create monochrome colour palettes
 ================
+
+
+<!-- badges: start -->
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/monochromeR)](https://cran.r-project.org/package=monochromeR)
+![](http://cranlogs.r-pkg.org/badges/grand-total/monochromeR?color=#0B3748)
+<!-- badges: end -->
 
 ![](inst/figures/logo-social.PNG)
 
@@ -8,8 +14,8 @@ monochromeR: an easy way to create monochrome colour palettes
 This package generates a monochrome palette from a starting colour for a
 specified number of colours. Users can decide whether to go darker,
 lighter, or both ways from that starting colour, which can be provided
-as a vector of rgb values (e.g. `c(15, 75, 99)`), a hex colour code
-(e.g. `#0F4B63`) or a recognised colour name (e.g. `"purple"`). The
+as a vector of rgb values (e.g. `c(15, 75, 99)`), a hex colour code
+(e.g. `#0F4B63`) or a recognised colour name (e.g. `"purple"`). The
 package can also display the generated palette in the plot window, with
 or without hex colour code labels.
 
@@ -118,7 +124,7 @@ view_palette(c(wesanderson::wes_palettes$Moonrise1,
 
 ## Easily pass the output to functions which check accessibility
 
-Version 0.1.1 onwards exports a ggplot object, which can be passed to
+Version 0.1.3 onwards exports a ggplot object, which can be passed to
 functions such as colorblindr::cvd_grid() to check how the palette is
 perceived by people with different visual perception. With
 `view_labels = TRUE`, the labels are displayed in black and white on top
